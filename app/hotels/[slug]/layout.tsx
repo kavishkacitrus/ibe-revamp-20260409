@@ -48,7 +48,15 @@ export async function generateMetadata(
                 openGraph: {
                     title: name,
                     description: description,
-                    images: [imageUrl],
+                    url: `./`,
+                    images: [
+                        {
+                            url: imageUrl,
+                            width: 1200,
+                            height: 630,
+                            alt: name,
+                        }
+                    ],
                     type: "website",
                     siteName: "HotelMate",
                 },
